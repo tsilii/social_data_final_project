@@ -43,8 +43,8 @@
 <nav>
   <a href="#intro">Introduction</a>
   <a href="#tipmap">The Tip Map</a>
-  <a href="#rankings">Zone Rankings</a>
   <a href="#income">The Income Link</a>
+  <a href="#rankings">Zone Rankings</a>
   <a href="#night">Night Effect</a>
   <a href="#caveats">Limitations</a>
   <a href="#conclusion">Conclusion</a>
@@ -221,84 +221,10 @@
   </div>
 </section>
 
-<!-- ══ SECTION 3 · ZONE RANKINGS ══════════════════════════════════════ -->
-<section id="rankings">
-  <div class="container">
-    <p class="section-label">Section 3</p>
-    <h2 class="section-title">The Highest and Lowest Earning Zones</h2>
-
-    <p>
-      Zooming to the zone level, the contrast is even more vivid.
-      <strong>Upper West Side South</strong> leads all pickup zones with a
-      26.6% average tip across 838,000 trips. The top 10 list reads like
-      a map of Manhattan's most affluent residential corridors:
-      Upper East Side, Lincoln Square, Flatiron, Greenwich Village — all
-      zones where median household incomes exceed $130,000 per year.
-    </p>
-    <p>
-      At the other extreme, <strong>Arden Heights</strong> on Staten Island
-      records a 0.09% average tip — essentially zero — across 287 trips.
-      Co-Op City in the Bronx, Far Rockaway in Queens, and Hammels/Arverne
-      round out the bottom, all with average tips below 0.3%.
-    </p>
-  </div>
-
-  <div class="wide-container">
-    <div class="viz-wrap">
-      <iframe src="visualizations/zone_tip_ranking.html" height="720" loading="lazy"></iframe>
-    </div>
-    <p class="viz-caption">
-      Figure 2 — Top 15 and bottom 15 pickup zones by average tip percentage
-      (minimum 500 trips). Green bars = high-tip zones; red bars = low-tip zones.
-    </p>
-  </div>
-
-  <div class="container">
-    <h3 style="color:var(--navy); margin-bottom:1rem;">Top 10 Pickup Zones by Avg Tip</h3>
-    <table class="bucket-table">
-      <thead>
-        <tr>
-          <th>Zone</th>
-          <th>Borough</th>
-          <th>Avg Tip %</th>
-          <th>Trips</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="danger-low"><td>Upper West Side South</td><td>Manhattan</td><td><strong>26.6%</strong></td><td>838,165</td></tr>
-        <tr class="danger-low"><td>Upper East Side South</td><td>Manhattan</td><td><strong>26.6%</strong></td><td>1,427,186</td></tr>
-        <tr class="danger-low"><td>Lincoln Square East</td><td>Manhattan</td><td><strong>26.2%</strong></td><td>995,570</td></tr>
-        <tr class="danger-low"><td>Upper East Side North</td><td>Manhattan</td><td><strong>26.2%</strong></td><td>1,285,185</td></tr>
-        <tr class="danger-low"><td>Yorkville West</td><td>Manhattan</td><td><strong>26.1%</strong></td><td>568,595</td></tr>
-        <tr class="danger-low"><td>Lenox Hill West</td><td>Manhattan</td><td><strong>25.8%</strong></td><td>714,161</td></tr>
-        <tr class="danger-low"><td>Flatiron</td><td>Manhattan</td><td><strong>25.8%</strong></td><td>492,445</td></tr>
-        <tr class="danger-low"><td>Greenwich Village North</td><td>Manhattan</td><td><strong>25.8%</strong></td><td>417,267</td></tr>
-        <tr class="danger-low"><td>Upper West Side North</td><td>Manhattan</td><td><strong>25.7%</strong></td><td>567,911</td></tr>
-        <tr class="danger-low"><td>Sutton Place/Turtle Bay North</td><td>Manhattan</td><td><strong>25.6%</strong></td><td>567,907</td></tr>
-      </tbody>
-    </table>
-
-    <p style="margin-top:1.5rem;">
-      Every single top-10 zone is in Manhattan — and every one corresponds to
-      a neighbourhood where the median household income exceeds $130,000 per year.
-      These are the residential zones of New York's professional class —
-      where trips tend to be short, frequent, and made by passengers who
-      habitually press the 25% or 30% button on the payment terminal.
-    </p>
-
-    <div class="pullquote">
-      The top-earning pickup zones for taxi tips are not near tourist landmarks
-      or Wall Street — they are in the quiet, tree-lined residential blocks of
-      the Upper East and Upper West Sides, where income is among the highest in
-      the country.
-    </div>
-  </div>
-</section>
-
-<!-- ══ SECTION 4 · THE INCOME LINK ═══════════════════════════════════ -->
+<!-- ══ SECTION 3 · THE INCOME LINK ═══════════════════════════════════ -->
 <section id="income">
   <div class="container">
-    <p class="section-label">Section 4</p>
+    <p class="section-label">Section 3</p>
     <h2 class="section-title">The Income Link: Data Confirms the Pattern</h2>
 
     <p>
@@ -331,7 +257,7 @@
       <iframe src="visualizations/income_map.html" height="580" loading="lazy"></iframe>
     </div>
     <p class="viz-caption">
-      Figure 3 — Median household income by NYC taxi zone (ACS 2023, area-weighted from
+      Figure 2 — Median household income by NYC taxi zone (ACS 2023, area-weighted from
       census tracts). Only zones with ≥500 yellow taxi trips are coloured (193 zones);
       grey zones have insufficient yellow taxi coverage and are excluded from analysis.
     </p>
@@ -351,7 +277,7 @@
       <iframe src="visualizations/income_vs_tips_scatter.html" height="540" loading="lazy"></iframe>
     </div>
     <p class="viz-caption">
-      Figure 4 — Average tip % vs median household income per taxi zone (2023),
+      Figure 3 — Average tip % vs median household income per taxi zone (2023),
       193 zones with ≥500 yellow taxi trips. Bubble size = trip volume.
       OLS trend line shown. Spearman r = 0.66 (p &lt; 0.001). Hover for zone details.
     </p>
@@ -373,7 +299,7 @@
       <iframe src="visualizations/tip_by_income_group.html" height="460" loading="lazy"></iframe>
     </div>
     <p class="viz-caption">
-      Figure 5 — Average tip % by neighbourhood income quintile. Q1 = lowest-income zones,
+      Figure 4 — Average tip % by neighbourhood income quintile. Q1 = lowest-income zones,
       Q5 = highest-income zones. Hover for number of zones, trips, and median income per group.
     </p>
   </div>
@@ -452,6 +378,80 @@
         <h4>Maps Align Almost Perfectly</h4>
         <p>The tip percentage map and the income map trace almost the same contours — particularly the Upper East/West Side pockets of high income and high tips.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SECTION 4 · ZONE RANKINGS ══════════════════════════════════════ -->
+<section id="rankings">
+  <div class="container">
+    <p class="section-label">Section 4</p>
+    <h2 class="section-title">The Highest and Lowest Earning Zones</h2>
+
+    <p>
+      Zooming to the zone level, the contrast is even more vivid.
+      <strong>Upper West Side South</strong> leads all pickup zones with a
+      26.6% average tip across 838,000 trips. The top 10 list reads like
+      a map of Manhattan's most affluent residential corridors:
+      Upper East Side, Lincoln Square, Flatiron, Greenwich Village — all
+      zones where median household incomes exceed $130,000 per year.
+    </p>
+    <p>
+      At the other extreme, <strong>Arden Heights</strong> on Staten Island
+      records a 0.09% average tip — essentially zero — across 287 trips.
+      Co-Op City in the Bronx, Far Rockaway in Queens, and Hammels/Arverne
+      round out the bottom, all with average tips below 0.3%.
+    </p>
+  </div>
+
+  <div class="wide-container">
+    <div class="viz-wrap">
+      <iframe src="visualizations/zone_tip_ranking.html" height="720" loading="lazy"></iframe>
+    </div>
+    <p class="viz-caption">
+      Figure 5 — Top 15 and bottom 15 pickup zones by average tip percentage
+      (minimum 500 trips). Green bars = high-tip zones; red bars = low-tip zones.
+    </p>
+  </div>
+
+  <div class="container">
+    <h3 style="color:var(--navy); margin-bottom:1rem;">Top 10 Pickup Zones by Avg Tip</h3>
+    <table class="bucket-table">
+      <thead>
+        <tr>
+          <th>Zone</th>
+          <th>Borough</th>
+          <th>Avg Tip %</th>
+          <th>Trips</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="danger-low"><td>Upper West Side South</td><td>Manhattan</td><td><strong>26.6%</strong></td><td>838,165</td></tr>
+        <tr class="danger-low"><td>Upper East Side South</td><td>Manhattan</td><td><strong>26.6%</strong></td><td>1,427,186</td></tr>
+        <tr class="danger-low"><td>Lincoln Square East</td><td>Manhattan</td><td><strong>26.2%</strong></td><td>995,570</td></tr>
+        <tr class="danger-low"><td>Upper East Side North</td><td>Manhattan</td><td><strong>26.2%</strong></td><td>1,285,185</td></tr>
+        <tr class="danger-low"><td>Yorkville West</td><td>Manhattan</td><td><strong>26.1%</strong></td><td>568,595</td></tr>
+        <tr class="danger-low"><td>Lenox Hill West</td><td>Manhattan</td><td><strong>25.8%</strong></td><td>714,161</td></tr>
+        <tr class="danger-low"><td>Flatiron</td><td>Manhattan</td><td><strong>25.8%</strong></td><td>492,445</td></tr>
+        <tr class="danger-low"><td>Greenwich Village North</td><td>Manhattan</td><td><strong>25.8%</strong></td><td>417,267</td></tr>
+        <tr class="danger-low"><td>Upper West Side North</td><td>Manhattan</td><td><strong>25.7%</strong></td><td>567,911</td></tr>
+        <tr class="danger-low"><td>Sutton Place/Turtle Bay North</td><td>Manhattan</td><td><strong>25.6%</strong></td><td>567,907</td></tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top:1.5rem;">
+      Every single top-10 zone is in Manhattan — and every one corresponds to
+      a neighbourhood where the median household income exceeds $130,000 per year.
+      These are the residential zones of New York's professional class —
+      where trips tend to be short, frequent, and made by passengers who
+      habitually press the 25% or 30% button on the payment terminal.
+    </p>
+
+    <div class="pullquote">
+      The top-earning pickup zones for taxi tips are not near tourist landmarks
+      or Wall Street — they are in the quiet, tree-lined residential blocks of
+      the Upper East and Upper West Sides, where income is among the highest in
+      the country.
     </div>
   </div>
 </section>
@@ -539,7 +539,7 @@
       These caveats are important — but they do not undermine the main finding.
       The borough-level averages (Manhattan 25.2%, Bronx 1.5%, Staten Island 0.5%)
       are based on millions of trips and are not sensitive to small-sample noise.
-      The income–tip relationship (r = 0.574) is robust and consistent across
+      The income–tip relationship (r = 0.656) is robust and consistent across
       multiple analytical approaches. The economic geography of NYC taxi tipping
       is a large-scale, durable pattern.
     </p>
